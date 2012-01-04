@@ -44,12 +44,12 @@ Hyphenation patterns for Latvian in L7X and UTF-8 encodings.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-latvian <<EOF
-%% from hyphen-latvian:
+\%\% from hyphen-latvian:
 latvian loadhyph-lv.tex
 EOF
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-latvian <<EOF
-%% from hyphen-latvian:
+\%\% from hyphen-latvian:
 \addlanguage{latvian}{loadhyph-lv.tex}{}{2}{2}
 EOF
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
