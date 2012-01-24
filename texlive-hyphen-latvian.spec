@@ -5,8 +5,8 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-latvian
-Version:	20111103
-Release:	2
+Version:	20120124
+Release:	1
 Summary:	Latvian hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -44,14 +44,16 @@ Hyphenation patterns for Latvian in L7X and UTF-8 encodings.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-latvian <<EOF
-\%\% from hyphen-latvian:
+\%% from hyphen-latvian:
 latvian loadhyph-lv.tex
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_dat_d}/hyphen-latvian
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-latvian <<EOF
-\%\% from hyphen-latvian:
+\%% from hyphen-latvian:
 \addlanguage{latvian}{loadhyph-lv.tex}{}{2}{2}
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_def_d}/hyphen-latvian
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
 cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-latvian <<EOF
 -- from hyphen-latvian:
