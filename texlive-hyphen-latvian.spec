@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-latvian
 Version:	20120611
-Release:	2
+Release:	3
 Summary:	Latvian hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
