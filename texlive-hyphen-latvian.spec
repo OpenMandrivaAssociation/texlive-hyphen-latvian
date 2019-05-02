@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-latvian
-Version:	20181105
+Version:	20190406
 Release:	1
 Summary:	Latvian hyphenation patterns
 Group:		Publishing
